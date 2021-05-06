@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./favorite.component.css']
 })
 export class FavoriteComponent implements OnInit {
+  constructor () { }
 
-  constructor() { }
+  visible : boolean;
 
+  
   ngOnInit() {
   }
-
+  onclick() {
+    this.visible = !this.visible; 
+  }
 }
