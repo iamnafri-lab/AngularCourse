@@ -24,3 +24,4 @@ export class TitleCasePipe implements PipeTransform {
   }
 
 }
+

@@ -6,8 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  constructor(){}
+  constructor() { }
 
-  title : string;
-  
+  post = {
+    title: "Title",
+    isFavorite: true,
+  }
+
+  title: string;
+
+  onFavoriteChange(inp : boolean) {
+
+    this.post.isFavorite = inp;
+    console.log("Favorite State Changed : ", this.post.isFavorite);
+  }
 }
